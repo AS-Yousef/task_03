@@ -5,6 +5,15 @@
         <title>List</title>
     </head>
     <body>
-
+    	{% for POST in my_list %}
+    	<ul>
+    		<li>
+    		{{POST.restaurant_name}}
+    		</li>
+    		<li>
+    		 {{POST.food_type}}<br>
+    		</li>
+    	</ul>
+    	{% endfor %}
     </body>
 </html>
